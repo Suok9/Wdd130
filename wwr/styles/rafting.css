@@ -1,0 +1,107 @@
+:root {
+  --primary-color: #7D84B2;
+  --secondary-color: #8E9DCC;
+  --text-color: #D9DBF1;
+  --background-color: #F9F9ED;
+  --accent-color: #DBF4A7;
+  --font-family-header: 'Edu AU VIC WA NT Arrows', sans-serif;
+  --font-family-body: 'Bokor', system-ui;
+}
+
+body {
+  font-family: var(--font-family-body); /* Applying Bokor font to body */
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  background-color: var(--background-color); /* Optional, if you want a light background */
+  color: black; /* Default text color */
+  margin: 0;
+}
+
+header {
+  font-family: var(--font-family-header); /* Applying Edu AU VIC WA NT Arrows font to header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: darkblue;
+}
+
+header img {
+  height: 50px;
+}
+
+header nav a {
+  margin: 0 10px;
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px ;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: forestgreen;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero article {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  color: goldenrod;
+}
+
+.hero article img {
+  float: right;
+  margin-left: 10px;
+  width: 100px;
+  height: auto;
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--accent-color);
+  border-radius: 8px;
+}
+
+section img {
+  max-width: 100px;
+  margin: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+footer a img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+footer a {
+  text-decoration: none;
+}
