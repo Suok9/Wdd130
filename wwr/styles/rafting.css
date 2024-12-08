@@ -58,7 +58,7 @@ header nav a {
 }
 
 .hero-image {
-  width: 100%;
+  width: 30%;
   height: auto;
 }
 
@@ -69,23 +69,6 @@ header nav a {
   transform: translate(-50%, -50%);
   font-size: 3rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-.hero article {
-  position: absolute;
-  bottom: 10%;
-  left: 5%;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 10px;
-  color: goldenrod;
-}
-
-.hero article img {
-  float: right;
-  margin-left: 10px;
-  width: 100px;
-  height: auto;
 }
 
 section {
@@ -118,6 +101,82 @@ section figure figcaption {
   font-weight: bold;
 }
 
+/* Updated styles for the Contact Page */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--background-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(125, 132, 178, 0.5);
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--secondary-color);
+}
+
+.contact-info {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.contact-info a {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
   padding: 10px;
@@ -135,4 +194,4 @@ footer a img {
 
 footer a {
   text-decoration: none;
-}
+    }
