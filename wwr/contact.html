@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact page for the White Water Rafting company, part of Ejiro Ijabor's wdd130 course on web design">
+  <meta name="author" content="Ejiro Ijabor">
+  <title>Contact Us | White Water Rafting</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bokor&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.jpeg" alt="White Water Rafting Logo">
+    <h1>White Water Rafting</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <img src="images/contact-hero.png" alt="Contact Hero Image" class="hero-image">
+      <h1>Get in Touch</h1>
+    </div>
+
+    <section>
+      <h2>Contact Information</h2>
+      <p>We’d love to hear from you! Please use the form below or reach out through any of the contact methods listed here:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto: ijaborrosuo@gmail.com">info@rafting.com</a></li>
+        <li><strong>Phone:</strong> +234-813-767-6508</li>
+        <li><strong>Address:</strong> 14 Idama Estate, Edjeba, Nigeria</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact Form</h2>
+      <form action="submit_contact.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 White Water Rafting | Ejiro Ijabor</p>
+    <a href="#" aria-label="Visit our Facebook page"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="#" aria-label="Visit our Twitter page"><img src="images/twitter.jpeg" alt="Twitter"></a>
+    <a href="#" aria-label="Visit our Instagram page"><img src="images/instagram.jpeg" alt="Instagram"></a>
+  </footer>
+</body>
+
+</html>
