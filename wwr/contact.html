@@ -1,74 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contact page for the White Water Rafting company, part of Ejiro Ijabor's wdd130 course on web design">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with White Water Rafting for inquiries, bookings, and more. Contact us today!">
   <meta name="author" content="Ejiro Ijabor">
   <title>Contact Us | White Water Rafting</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bokor&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/rafting.css">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
   <header>
-    <img src="images/logo.jpeg" alt="White Water Rafting Logo">
-    <h1>White Water Rafting</h1>
+    <img src="contact-hero.png" alt="White Water Rafting Logo">
+    <h1>Contact Us</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
-      </ul>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
-
   <main>
-    <div class="hero">
-      <img src="images/contact-hero.png" alt="Contact Hero Image" class="hero-image">
-      <h1>Get in Touch</h1>
-    </div>
-
     <section>
-      <h2>Contact Information</h2>
-      <p>We’d love to hear from you! Please use the form below or reach out through any of the contact methods listed here:</p>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto: ijaborrosuo@gmail.com">info@rafting.com</a></li>
-        <li><strong>Phone:</strong> +234-813-767-6508</li>
-        <li><strong>Address:</strong> 14 Idama Estate, Edjeba, Nigeria</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contact Form</h2>
-      <form action="submit_contact.php" method="POST">
+      <h2>Get in Touch</h2>
+      <p>We’d love to hear from you! Use the form below to contact us for inquiries, bookings, or feedback.</p>
+      <form>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
+        <input type="text" id="name" name="name" required><br>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
+        <input type="email" id="email" name="email" required><br>
+        <label for="contact-reason">Reason for Contact:</label><br>
+        <input type="radio" id="inquiry" name="reason" value="inquiry">
+        <label for="inquiry">Inquiry</label><br>
+        <input type="radio" id="booking" name="reason" value="booking">
+        <label for="booking">Booking</label><br>
+        <input type="radio" id="feedback" name="reason" value="feedback">
+        <label for="feedback">Feedback</label><br>
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
+        <textarea id="message" name="message" required></textarea><br>
+        <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+        <label for="newsletter">Subscribe to our newsletter</label><br>
         <button type="submit">Send Message</button>
       </form>
     </section>
+    <section>
+      <h2>Our Location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_CODE"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
   </main>
-
   <footer>
-    <p>&copy; 2024 White Water Rafting | Ejiro Ijabor</p>
-    <a href="#" aria-label="Visit our Facebook page"><img src="images/facebook.png" alt="Facebook"></a>
-    <a href="#" aria-label="Visit our Twitter page"><img src="images/twitter.jpeg" alt="Twitter"></a>
-    <a href="#" aria-label="Visit our Instagram page"><img src="images/instagram.jpeg" alt="Instagram"></a>
+    <p>© 2024 White Water Rafting | Designed by Ejiro Ijabor</p>
   </footer>
 </body>
-
 </html>
