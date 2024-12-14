@@ -101,7 +101,7 @@ section figure figcaption {
   font-weight: bold;
 }
 
-/* Updated styles for the Contact Page */
+
 form {
   display: flex;
   flex-direction: column;
@@ -194,4 +194,9 @@ footer a img {
 
 footer a {
   text-decoration: none;
-    }
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+}
