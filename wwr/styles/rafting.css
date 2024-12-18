@@ -1,20 +1,20 @@
 :root {
   --primary-color: #7D84B2;
   --secondary-color: #8E9DCC;
-  --text-color: #D9DBF1;
+  --text-color: #272183; 
   --background-color: #F9F9ED;
   --accent-color: #DBF4A7;
+  --header-color: white;
+  --link-hover-color: white;
   --font-family-header: 'Edu AU VIC WA NT Arrows', sans-serif;
   --font-family-body: 'Bokor', system-ui;
 }
 
 body {
   font-family: var(--font-family-body);
-  font-weight: 400;
   font-size: 15px;
-  font-style: normal;
   background-color: var(--background-color);
-  color: black;
+  color: var(--text-color);
   margin: 0;
 }
 
@@ -22,11 +22,9 @@ header {
   font-family: var(--font-family-header);
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  justify-items: center;
   align-items: center;
   padding: 10px 20px;
   background-color: var(--primary-color);
-  color: darkblue;
 }
 
 header img {
@@ -35,27 +33,29 @@ header img {
 
 header h1 {
   font-size: 2rem;
-  color: white;
+  color: var(--header-color);
 }
 
 header nav {
   display: flex;
-  justify-content: center;
+  gap: 10px;
 }
 
 header nav a {
-  margin: 0 10px;
   color: red;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
+  transition: color 0.3s ease;
 }
 
+header nav a:hover {
+  color: var(--link-hover-color);
+}
 
 .hero {
   position: relative;
   text-align: center;
-  color: white;
 }
 
 .hero-image {
@@ -73,7 +73,6 @@ header nav a {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-
 form {
   display: flex;
   flex-direction: column;
@@ -89,7 +88,6 @@ form {
 
 form label {
   font-weight: bold;
-  margin-bottom: 5px;
 }
 
 form input,
@@ -111,7 +109,7 @@ form textarea:focus {
 form button {
   padding: 10px 20px;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--header-color);
   font-size: 1rem;
   font-weight: bold;
   border: none;
@@ -124,10 +122,8 @@ form button:hover {
   background-color: var(--secondary-color);
 }
 
-
 .cta {
   text-align: center;
-  margin: 20px;
   padding: 20px;
   background-color: var(--accent-color);
   border-radius: 10px;
@@ -136,20 +132,18 @@ form button:hover {
 
 .cta a {
   color: var(--primary-color);
-  font-size: 1.2rem;
-  font-weight: bold;
   text-decoration: none;
+  font-weight: bold;
   padding: 10px 20px;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .cta a:hover {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--link-hover-color);
 }
-
 
 .grid-section {
   display: grid;
@@ -180,16 +174,14 @@ form button:hover {
 
 .grid-item p {
   margin-top: 5px;
-  color: black;
   font-size: 1rem;
 }
-
 
 footer {
   text-align: center;
   padding: 10px;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--header-color);
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -203,7 +195,6 @@ footer a img {
 footer a {
   text-decoration: none;
 }
-
 
 .call-to-action {
   text-align: center;
@@ -221,7 +212,7 @@ footer a {
   display: inline-block;
   padding: 10px 20px;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--header-color);
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
@@ -231,7 +222,6 @@ footer a {
 .call-to-action .cta-button:hover {
   background-color: var(--secondary-color);
 }
-
 
 .trip-descriptions {
   display: grid;
@@ -256,7 +246,6 @@ footer a {
   border-bottom: 3px solid var(--accent-color);
 }
 
-
 .trips-table table {
   width: 100%;
   border-collapse: collapse;
@@ -271,7 +260,7 @@ footer a {
 
 .trips-table th {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--header-color);
 }
 
 .trips-table td {
@@ -283,5 +272,5 @@ footer a {
 }
 
 body.home-page {
-color: #272183;
+  color: var(--text-color);
 }
