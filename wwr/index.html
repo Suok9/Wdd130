@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>home page </title>
+        <title>Home Page - W.W.R Rafting</title>
         <link rel="stylesheet" href="styles/rafting.css">
     </head>
     <body class="home-page">
@@ -11,55 +11,61 @@
             <div class="logo">
                 <h1>W.W.R RAFTING</h1>
             </div>
-            <nav>
+            <nav aria-label="Main Navigation">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="trips.html">TRIPS</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
+            <!-- Hero Section -->
             <section class="hero">
-                <img src="images/hero.jpeg" alt="adv" class="hero-image">
+                <img src="images/hero.jpeg" alt="Rafting Adventure on Rapids" class="hero-image">
                 <div class="hero-text">
-                    <h2>Experience the thrill of a water based adventure with rafts</h2>
-                    <p>Join us for an unforgettable adventureon rapids</p>
+                    <h2>Experience the Thrill of White Water Rafting</h2>
+                    <p>Join us for unforgettable adventures on the rapids.</p>
                 </div>
             </section>
 
+            <!-- Newsletter Sign-Up Section -->
             <section class="newsletter">
                 <h3>Sign Up for Updates</h3>
-                <form action="#" method="POST">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <button type="submit">SUBMIT</button>
+                <form action="subscribe.php" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <button type="submit">Submit</button>
                 </form>
             </section>
 
+            <!-- Call to Action Section -->
             <section class="cta">
-                <h3>Ready for a great adventure?</h3>
-                <a href="trips.html">Explore our trips</a>
+                <h3>Ready for an Unforgettable Adventure?</h3>
+                <a href="trips.html" class="cta-button">Explore Our Trips</a>
             </section>
 
+            <!-- Grid Section -->
             <section class="grid-section">
-                <article>
-                    <img src="images/rafting1.jpeg" alt="raft1">
-                    <h4>About Us</h4>
-                    <p>Discover why we are tthe top destination for white water rafting</p>
-                </article>
+                <div class="grid-container">
                     <article>
-                        <img src="images/rafting2.jpeg" alt="raft2">
-                        <h4>Our Offerings</h4>
-                        <p> WE PROVIDE GUIDED TOURS AND TRIPS, GEAR RENTALS AND TRAINING FOR ALL SKILL LEVELS </p>
+                        <img src="images/rafting1.jpeg" alt="Group enjoying rafting adventure">
+                        <h4>About Us</h4>
+                        <p>Discover why we are the top destination for white water rafting.</p>
                     </article>
-                
+                    <article>
+                        <img src="images/rafting2.jpeg" alt="Professional rafting gear">
+                        <h4>Our Offerings</h4>
+                        <p>We provide guided tours, gear rentals, and training for all skill levels.</p>
+                    </article>
+                </div>
             </section>
         </main>
+
         <footer>
-            <p>&copy; 2024 W.W.R RAFTING. All rights reserved</p>
+            <p>&copy; 2024 W.W.R Rafting. All Rights Reserved.</p>
         </footer>
     </body>
 </html>
